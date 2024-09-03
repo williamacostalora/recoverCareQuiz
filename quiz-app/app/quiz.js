@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { quiz } from './questionset.js';
-import ScoreCard from './ScoreCard.js';
+import ScoreCard from './scorecard.js';
 
 const Quiz = ({ name }) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
