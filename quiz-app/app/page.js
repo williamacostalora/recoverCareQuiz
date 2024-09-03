@@ -9,7 +9,8 @@ export default function Home() {
 
     return (
         <div style={{ 
-                    background: 'linear-gradient(to bottom, #BCA7C9 , #F5F5F5 )', 
+                    background: 'linear-gradient(to bottom, #E4C9F4 20%, #F5F5F5 50%)', 
+
                     minHeight: '100vh', 
                     padding: '20px' 
                 }}>
@@ -18,7 +19,7 @@ export default function Home() {
 
                 <h1 className='mtb-1'>
                     <span style={{ color: 'black' }}>r</span>
-                    <span style={{ color: '#7E38B7' }}>.</span>
+                    <span style={{ color: '#945DD9' }}>.</span>
                     <span style={{ color: 'black' }}>care</span>
                 </h1>
                 <br/>
@@ -31,12 +32,12 @@ export default function Home() {
                         <span style={{ color: '#4D4D4D' }}>your binge eating ✨</span>
                     </h3>
 
-                    <h6>
+                    <small>
                         
                         <span style={{ color: '#4D4D4D' }}>Select your age to start the quiz.</span>
                         <br/> <br/>
                         <span style={{ color: '#A9A9A9' }}>⌛ 3 min quiz</span>
-                    </h6>
+                    </small>
                 </div>
 
                 <br/><br/>
@@ -63,7 +64,7 @@ export default function Home() {
                             onClick={() => setQuizStarted(true)}
                             className="btn btn-primary btn-large"
                             style={{ 
-                                backgroundColor: '#7E38B7', 
+                                backgroundColor: '#945DD9', 
                                 marginRight: '13px', 
                                 marginBottom: '13px',  
                                 width: '110px', 
@@ -82,7 +83,7 @@ export default function Home() {
                             onClick={() => setQuizStarted(true)}
                             className="btn btn-primary btn-large"
                             style={{ 
-                                backgroundColor: '#7E38B7', 
+                                backgroundColor: '#945DD9', 
                                 marginRight: '13px', 
                                 marginBottom: '13px',  
                                 width: '110px', 
@@ -101,7 +102,7 @@ export default function Home() {
                             onClick={() => setQuizStarted(true)}
                             className="btn btn-primary btn-large"
                             style={{ 
-                                backgroundColor: '#7E38B7', 
+                                backgroundColor: '#945DD9', 
                                 marginRight: '13px', 
                                 marginBottom: '13px', 
                                 width: '110px', 
@@ -120,7 +121,7 @@ export default function Home() {
                             onClick={() => setQuizStarted(true)}
                             className="btn btn-primary btn-large"
                             style={{ 
-                                backgroundColor: '#7E38B7', 
+                                backgroundColor: '#945DD9',
                                 marginRight: '13px', 
                                 marginBottom: '13px', 
                                 width: '110px', 
@@ -132,7 +133,7 @@ export default function Home() {
                             }}
 
                         >
-                            60+
+                            50+
                         </button></center>
                     </>
                 )}
