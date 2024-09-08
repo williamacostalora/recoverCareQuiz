@@ -1,10 +1,17 @@
 
 'use client'
 import { useState } from "react";
+import { useRouter } from 'next/navigation'
+
 
 export default function Question2() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
+    const router = useRouter();
+
+    const continQuiz = () => {
+        router.push('/r1-1');
+      };
 
     return (
         <div style={{ 
@@ -80,7 +87,7 @@ export default function Question2() {
                             </div> */}
                             <center>
                                 <button
-                                    onClick={() => setQuizStarted(true)}
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -95,11 +102,13 @@ export default function Question2() {
                                     }}
 
                                 >
-                                    I'm diagnosed by a doctor.
+                                    {/* I'm diagnosed by a doctor. */}
+                                    <span style={{ color: 'black' }}>I'm diagnosed by a doctor.</span>
+
                                 </button>
                                 <br/>
                                 <button
-                                    onClick={() => setQuizStarted(true)}
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -114,11 +123,13 @@ export default function Question2() {
                                     }}
 
                                 >
-                                    I'm self-diagnosed.
+                                    {/* I'm self-diagnosed. */}
+                                    <span style={{ color: 'black' }}>I'm self-diagnosed.</span>
+
                                 </button>
                                 <br/>
                                 <button
-                                    onClick={() => setQuizStarted(true)}
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -133,11 +144,13 @@ export default function Question2() {
                                     }}
 
                                 >
-                                    I suspect I might have BED.
+                                    {/* I suspect I might have BED. */}
+                                    <span style={{ color: 'black' }}>I suspect I might have BED.</span>
+
                                 </button>
                                 <br/>
                                 <button
-                                    onClick={() => setQuizStarted(true)}
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -151,11 +164,13 @@ export default function Question2() {
                                         boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
                                 >
-                                    Not with BED, but another eating <br/>disorder.
+                                    {/* Not with BED, but another eating <br/>disorder. */}
+                                    <span style={{ color: 'black' }}>Not with BED, but another eating <br/>disorder.</span>
+
                                 </button>
                                 <br/>
                                 <button
-                                    onClick={() => setQuizStarted(true)}
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -169,7 +184,9 @@ export default function Question2() {
                                         boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
                                 >
-                                    Something else
+                                    {/* Something else */}
+                                    <span style={{ color: 'black' }}>Something else</span>
+
                                 </button>
                             </center>
                         </>

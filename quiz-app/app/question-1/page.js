@@ -1,10 +1,17 @@
 
 'use client'
 import { useState } from "react";
+import { useRouter } from 'next/navigation'
+
 
 export default function Question2() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
+    const router = useRouter();
+
+    const continQuiz = () => {
+        router.push('/question-2');
+      };
 
     return (
         <div style={{ 
@@ -45,7 +52,6 @@ export default function Question2() {
                     </center>
                         
                     </div>
-                    <br/><br/>
                     
 
             
@@ -72,7 +78,7 @@ export default function Question2() {
                             </div> */}
                             <center>
                                 <button
-                                    onClick={() => setQuizStarted(true)}
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -87,11 +93,12 @@ export default function Question2() {
                                     }}
 
                                 >
-                                    Female
+                                    {/* Female */}
+                                    <span style={{ color: 'black' }}>Female</span>
                                 </button>
                                 <br/>
                                 <button
-                                    onClick={() => setQuizStarted(true)}
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -106,11 +113,12 @@ export default function Question2() {
                                     }}
 
                                 >
-                                    Male
+                                    {/* Male */}
+                                    <span style={{ color: 'black' }}>Male</span>
                                 </button>
                                 <br/>
                                 <button
-                                    onClick={() => setQuizStarted(true)}
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -125,11 +133,13 @@ export default function Question2() {
                                     }}
 
                                 >
-                                    Non-binary
+                                    {/* Non-binary */}
+                                    <span style={{ color: 'black' }}>Non-binary</span>
+
                                 </button>
                                 <br/>
                                 <button
-                                    onClick={() => setQuizStarted(true)}
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -143,7 +153,10 @@ export default function Question2() {
                                         
                                     }}
                                 >
-                                    Prefer not to answer
+                                    {/* Prefer not to answer */}
+                                    <span style={{ color: 'black' }}>                                    Prefer not to answer
+                                    </span>
+
                                 </button>
                                 <br/>
                                 {/* <button
