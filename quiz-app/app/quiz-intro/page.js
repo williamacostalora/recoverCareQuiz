@@ -85,6 +85,17 @@ export default function QuizIntro() {
                             Very High
 
                         </button>
+
+                        <br/>
+                        <img
+                            src="quiz-app/app/assets/harvard-medschool-logo.png"
+                            alt="Harvard Med School Logo"
+                            style={{
+                            width: '150px',
+                            height: 'auto',
+                            marginTop: '20px', // Add margin to create space between button and image
+                            }}
+                        />
                     </center>
 
                     
