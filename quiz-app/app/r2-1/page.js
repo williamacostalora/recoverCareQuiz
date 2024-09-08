@@ -34,18 +34,14 @@ export default function r11() {
 
 
                     <center>                   
-                        <img src="/quiz-app/public/assets/r1-1 bean.png" alt="bean" style={{ width: '200px', height: 'auto' }} />
+                        <img src="/quiz-app/public/assets/r2-1 bean.png" alt="bean" style={{ width: '200px', height: 'auto' }} />
 
-                        <h3 className='mb-4'>
-                            Glad you are here!
-                        </h3>
-                        <br/>
+                        <br/><br/>
                         <small>
-                            If you are trying to get more insight<br/> into your binge eating behavior, <br/>our quiz is a great first step.
+                            Binge eating symptoms can be <br/>exhausting.
                             
                             <br/> 
                             <br/>
-                            {/* <span style={{ color: '#A9A9A9' }}>⌛ 3 min quiz</span> */}
                         </small>
                     </center>
                         
