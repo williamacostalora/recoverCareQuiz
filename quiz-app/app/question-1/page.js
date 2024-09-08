@@ -2,6 +2,8 @@
 'use client'
 import { useState } from "react";
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
+ 
 
 
 export default function Question1() {
@@ -22,6 +24,13 @@ export default function Question1() {
             <div className="container mt-5 ml-5">
                 <div className="text-center">
                     <center>
+                    <img
+                        src="/assets/q1-bar.png"
+                        width={600}
+                        height={50}
+                        alt="Picture of loading bar"
+                        layout="intrinsic"
+                    />
                         <small className='mtb-1'>
                             <span style={{ color: '#7D7D7D' }}>Profile</span>
                         </small>
