@@ -10,7 +10,7 @@ export default function Question7() {
     const router = useRouter();
 
     const continQuiz = () => {
-        router.push('/questions/question-8');
+        router.push('/questions/question-11');
       };
 
     return (
@@ -44,7 +44,7 @@ export default function Question7() {
                     <center>
                         <h3 className='mb-4'>
                         <span style={{ color: '#4D4D4D' }}>
-                            Do you often eat, even though you <br/>are not hungry, because of habit?
+                            Does your life seem to be 'feast'or <br/>'famine' with very little moderation?
                         </span>
                         </h3>
                         

@@ -10,7 +10,7 @@ export default function Question7() {
     const router = useRouter();
 
     const continQuiz = () => {
-        router.push('/questions/question-8');
+        router.push('/questions/question-12');
       };
 
     return (
@@ -44,7 +44,7 @@ export default function Question7() {
                     <center>
                         <h3 className='mb-4'>
                         <span style={{ color: '#4D4D4D' }}>
-                            Do you often eat, even though you <br/>are not hungry, because of habit?
+                            Do you tend to eat all day with no <br/>defined meal times?
                         </span>
                         </h3>
                         
