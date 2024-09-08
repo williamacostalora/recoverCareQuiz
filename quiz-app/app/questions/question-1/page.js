@@ -12,7 +12,7 @@ export default function Question1() {
     const router = useRouter();
 
     const continQuiz = () => {
-        router.push('/question-2');
+        router.push('/questions/question-2');
       };
 
     return (
@@ -24,25 +24,19 @@ export default function Question1() {
             <div className="container mt-5 ml-5">
                 <div className="text-center">
                     <center>
-                    <img 
-                        src="/assets/q2-bar.jpeg" 
-                        alt="progress bar" 
-                        style={{ width: '200px', height: '100' }} 
-                    />
+                    ⬅               damsfbjdshbfkcsjdnxkc
                         <small className='mtb-1'>
                             <span style={{ color: '#7D7D7D' }}>Profile</span>
                         </small>
-                        <br/>
-
-                    <img 
-                        src="/quiz-app/public/assets/q2-bar.jpeg" 
-                        alt="progress bar" 
-                        style={{ width: '200px', height: 'auto' }} 
-                    />
+                        <br/><br/>
+                        <img 
+                            src="/assets/q2-bar.jpeg" 
+                            alt="progress bar" 
+                            style={{ width: '200px', height: '100' }} 
+                        />
+                        
                     </center>
 
-
-                    <br/>
                     <br/>
                     <br/>
                     <center>

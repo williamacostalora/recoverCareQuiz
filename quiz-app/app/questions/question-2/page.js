@@ -10,7 +10,8 @@ export default function Question2() {
     const router = useRouter();
 
     const continQuiz = () => {
-        router.push('/r1-1');
+        // router.push('/loading/r1-1');
+        router.push('/questions/question-3');
       };
 
     return (

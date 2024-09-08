@@ -9,9 +9,9 @@ export default function Question3() {
     const [name, setName] = useState('');
     const router = useRouter();
 
-    // const continQuiz = () => {
-    //     router.push('/r1-1');
-    //   };
+    const continQuiz = () => {
+        router.push('/questions/question-4');
+      };
 
     return (
         <div style={{ 

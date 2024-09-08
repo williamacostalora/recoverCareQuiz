@@ -4,14 +4,14 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
 
 
-export default function Question3() {
+export default function Question7() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
 
-    // const continQuiz = () => {
-    //     router.push('/r1-1');
-    //   };
+    const continQuiz = () => {
+        router.push('/questions/question-8');
+      };
 
     return (
         <div style={{ 
