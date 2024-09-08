@@ -24,12 +24,10 @@ export default function Question1() {
             <div className="container mt-5 ml-5">
                 <div className="text-center">
                     <center>
-                    <img
-                        src="/assets/q1-bar.png"
-                        width={600}
-                        height={50}
-                        alt="Picture of loading bar"
-                        layout="intrinsic"
+                    <img 
+                        src="/assets/q2-bar.jpeg" 
+                        alt="progress bar" 
+                        style={{ width: '200px', height: '100' }} 
                     />
                         <small className='mtb-1'>
                             <span style={{ color: '#7D7D7D' }}>Profile</span>
