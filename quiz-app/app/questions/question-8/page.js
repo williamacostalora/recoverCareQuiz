@@ -9,9 +9,9 @@ export default function Question8() {
     const [name, setName] = useState('');
     const router = useRouter();
 
-    // const continQuiz = () => {
-    //     router.push('/r1-1');
-    //   };
+    const continQuiz = () => {
+        router.push(path);
+      };
 
     return (
         <div style={{ 
@@ -56,7 +56,7 @@ export default function Question8() {
                             
                             <center>
                                 <button
-                                    onClick={() => continQuiz(true)}
+                                    onClick={() => continQuiz('/answers/question-8-answ1')}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -77,7 +77,7 @@ export default function Question8() {
                                 </button>
                               
                                 <button
-                                    onClick={() => continQuiz(true)}
+                                    onClick={() => continQuiz('/answers/question-8-answ2')}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -100,7 +100,7 @@ export default function Question8() {
 
 
                                 {/* <center> */}
-                                <button
+                                {/* <button
                                         style={{ 
                                             position: 'fixed',
                                             bottom: '150px',
@@ -113,6 +113,8 @@ export default function Question8() {
                                             border:'none', 
                                             outline:'none',
                                             borderRadius:'15px',
+                                            left: '50%',
+                                            transform: 'translateX(-50%)'
                                             // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                             
                                         }}
@@ -122,9 +124,9 @@ export default function Question8() {
                                             🌟Your resilience is yo strength-keep using it to <br/>
                                             stay on track with your recovery goal.
                                         </small>
-                                    </button>   
+                                    </button>    */}
 
-                                    <button
+                                    {/* <button
                                         style={{ 
                                             position: 'fixed',
                                             bottom: '60px',
@@ -137,6 +139,8 @@ export default function Question8() {
                                             border:'none', 
                                             outline:'none',
                                             borderRadius:'15px',
+                                            left: '50%',
+                                            transform: 'translateX(-50%)'
                                             // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                             
                                         }}
@@ -146,7 +150,7 @@ export default function Question8() {
                                             🍃It's okay to struggle; we're here to help you get <br/>
                                             back up to practice mindful eating, one step at a time!
                                         </small>
-                                    </button>   
+                                    </button>    */}
                                     
                                     <br/>
                                     <button
@@ -167,7 +171,9 @@ export default function Question8() {
                                             border:'none', 
                                             outline:'none',
                                             borderRadius:'15px',
-                                            boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                            boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
+                                            left: '50%',
+                                            transform: 'translateX(-50%)'
                                             
                                         }}
 

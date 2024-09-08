@@ -76,7 +76,7 @@ export default function Question7() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
 
                                 >
@@ -95,7 +95,7 @@ export default function Question7() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
 
                                 >
@@ -114,7 +114,7 @@ export default function Question7() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
 
                                 >
@@ -133,7 +133,7 @@ export default function Question7() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
                                 >
                                     Rarely
@@ -151,7 +151,7 @@ export default function Question7() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
                                 >
                                     Never
