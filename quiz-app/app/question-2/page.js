@@ -1,0 +1,181 @@
+
+'use client'
+import { useState } from "react";
+
+export default function Question2() {
+    const [quizStarted, setQuizStarted] = useState(false);
+    const [name, setName] = useState('');
+
+    return (
+        <div style={{ 
+                    background: 'white', 
+                    minHeight: '100vh', 
+                    padding: '20px' 
+                }}>
+            <div className="container mt-5 ml-5">
+                <div className="text-center">
+                    <center>
+                        <small className='mtb-1'>
+                            <span style={{ color: '#7D7D7D' }}>Profile</span>
+                        </small>
+                        <br/>
+
+                    <img 
+                        src="/quiz-app/public/assets/q2-bar.jpeg" 
+                        alt="progress bar" 
+                        style={{ width: '200px', height: 'auto' }} 
+                    />
+                    </center>
+
+
+                    <br/>
+                    <br/>
+                    <br/>
+                    <center>
+                        <h3 className='mb-4'>
+                        <span style={{ color: '#4D4D4D' }}>
+                            Have you ever been diagnosed with <br/>
+                            Binge Eating Disorder (BED)?
+                        </span>
+                            
+                        </h3>
+                        <br/>
+                        <small>
+                            
+                            <span style={{ color: '#BCA7C9' }}>It helps us enhance your experience, but rest assured, <br/>
+                            everyone is welcome, diagnosis or not.
+                            <br/>
+                            </span>
+        
+                            
+                            {/* <span style={{ color: '#A9A9A9' }}>⌛ 3 min quiz</span> */}
+                        </small>
+                    </center>
+                        
+                    </div>
+                    <br/><br/>
+                    
+
+            
+
+                    
+
+                    {quizStarted ? (
+                        <Quiz name={name} />
+                    ) : (
+                        <>
+                            {/* <div className="mb-3">
+                                <label htmlFor="nameInput"
+                                    className="form-label">
+                                    Enter Your Name:
+                                </label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="nameInput"
+                                    value={name}
+                                    onChange={(e) =>
+                                        setName(e.target.value)}
+                                />
+                            </div> */}
+                            <center>
+                                <button
+                                    onClick={() => setQuizStarted(true)}
+                                    className="btn btn-primary btn-large"
+                                    style={{ 
+                                        backgroundColor: '#F0F0F0', 
+                                        marginRight: '13px', 
+                                        marginBottom: '13px',  
+                                        width: '300px', 
+                                        height: '50px' , 
+                                        border:'none', 
+                                        outline:'none',
+                                        borderRadius:'15px',
+                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                    }}
+
+                                >
+                                    I'm diagnosed by a doctor.
+                                </button>
+                                <br/>
+                                <button
+                                    onClick={() => setQuizStarted(true)}
+                                    className="btn btn-primary btn-large"
+                                    style={{ 
+                                        backgroundColor: '#F0F0F0', 
+                                        marginRight: '13px', 
+                                        marginBottom: '13px',  
+                                        width: '300px', 
+                                        height: '50px' , 
+                                        border:'none', 
+                                        outline:'none',
+                                        borderRadius:'15px',
+                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                    }}
+
+                                >
+                                    I'm self-diagnosed.
+                                </button>
+                                <br/>
+                                <button
+                                    onClick={() => setQuizStarted(true)}
+                                    className="btn btn-primary btn-large"
+                                    style={{ 
+                                        backgroundColor: '#F0F0F0', 
+                                        marginRight: '13px', 
+                                        marginBottom: '13px',  
+                                        width: '300px', 
+                                        height: '50px' , 
+                                        border:'none', 
+                                        outline:'none',
+                                        borderRadius:'15px',
+                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                    }}
+
+                                >
+                                    I suspect I might have BED.
+                                </button>
+                                <br/>
+                                <button
+                                    onClick={() => setQuizStarted(true)}
+                                    className="btn btn-primary btn-large"
+                                    style={{ 
+                                        backgroundColor: '#F0F0F0', 
+                                        marginRight: '13px', 
+                                        marginBottom: '13px',  
+                                        width: '300px', 
+                                        height: '50px' , 
+                                        border:'none', 
+                                        outline:'none',
+                                        borderRadius:'15px',
+                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                    }}
+                                >
+                                    Not with BED, but another eating <br/>disorder.
+                                </button>
+                                <br/>
+                                <button
+                                    onClick={() => setQuizStarted(true)}
+                                    className="btn btn-primary btn-large"
+                                    style={{ 
+                                        backgroundColor: '#F0F0F0', 
+                                        marginRight: '13px', 
+                                        marginBottom: '13px',  
+                                        width: '300px', 
+                                        height: '50px' , 
+                                        border:'none', 
+                                        outline:'none',
+                                        borderRadius:'15px',
+                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                    }}
+                                >
+                                    Something else
+                                </button>
+                            </center>
+                        </>
+                    )}
+            </div>
+            
+        </div>
+    );
+}
