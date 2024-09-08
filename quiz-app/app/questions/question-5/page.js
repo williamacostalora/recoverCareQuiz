@@ -44,7 +44,7 @@ export default function Question3() {
                     <center>
                         <h3 className='mb-4'>
                         <span style={{ color: '#4D4D4D' }}>
-                            Do you feel in control of <br/>how much you eat?
+                            Do you have a strong habit of eating <br/>when you're bored such that nothing <br/>can distract you?
                         </span>
                         </h3>
                         

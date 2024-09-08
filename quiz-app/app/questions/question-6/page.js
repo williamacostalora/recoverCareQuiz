@@ -44,7 +44,7 @@ export default function Question3() {
                     <center>
                         <h3 className='mb-4'>
                         <span style={{ color: '#4D4D4D' }}>
-                            Do you feel in control of <br/>how much you eat?
+                            Do you often feel desperate that you <br/>can't be more in control of what you <br/>eat?
                         </span>
                         </h3>
                         
