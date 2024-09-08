@@ -30,7 +30,7 @@ export default function r11() {
 
 
                     <center>                   
-                        <img src="quiz-app/app/assets/r1-1.png" alt="bean" style={{ width: '200px', height: 'auto' }} />
+                        <img src="/quiz-app/public/assets/r1-1.png" alt="bean" style={{ width: '200px', height: 'auto' }} />
 
                         <h3 className='mb-4'>
                             Glad you are here!
