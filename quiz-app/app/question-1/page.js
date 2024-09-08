@@ -2,7 +2,7 @@
 'use client'
 import { useState } from "react";
 
-export default function Question2() {
+export default function Question1() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
 
