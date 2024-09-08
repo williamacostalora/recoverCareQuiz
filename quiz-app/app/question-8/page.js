@@ -100,7 +100,55 @@ export default function Question8() {
                                     <br/><br/>Yes
                                 </button>
                                 <br/>
+
+                                <center>
+                                <button
+                                    style={{ 
+                                        position: 'fixed',
+                                        bottom: '60px',
+                                        align: 'center',
+                                        backgroundColor: '#F0E6FB', 
+                                        marginRight: '13px', 
+                                        marginBottom: '13px',  
+                                        width: '300px', 
+                                        height: '70px' , 
+                                        border:'none', 
+                                        outline:'none',
+                                        borderRadius:'15px',
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                        
+                                    }}
+
+                                >
+                                    <small>
+                                        🍃It's okay to struggle; we're here to help you get <br/>
+                                        back up to practice mindful eating, one step at a time!
+                                    </small>
+                                </button>   
+                                </center>
                                 
+                                <br/>
+                                <button
+                                    onClick={() => continQuiz(true)}
+                                    className="btn btn-primary btn-large"
+                                    style={{ 
+                                        position: 'fixed',
+                                        bottom: '0',
+                                        backgroundColor: '#945DD9', 
+                                        marginRight: '13px', 
+                                        marginBottom: '13px',  
+                                        width: '300px', 
+                                        height: '50px' , 
+                                        border:'none', 
+                                        outline:'none',
+                                        borderRadius:'15px',
+                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                        
+                                    }}
+
+                                >
+                                Continue
+                                </button>
                             </center>
                         </>
                     )}

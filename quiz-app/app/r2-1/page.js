@@ -34,7 +34,7 @@ export default function r11() {
 
 
                     <center>                   
-                        <img src="/quiz-app/public/assets/r2-1 bean.png" alt="bean" style={{ width: '200px', height: 'auto' }} />
+                        <img src="/assets/r2-1 bean.png" alt="bean2" style={{ width: '200px', height: 'auto' }} />
 
                         <br/><br/>
                         <small>

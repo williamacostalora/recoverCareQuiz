@@ -28,9 +28,9 @@ export default function Question2() {
                         <br/>
 
                     <img 
-                        src="/quiz-app/public/assets/q2-bar.jpeg" 
+                        src="/assets/q2-bar.jpeg" 
                         alt="progress bar" 
-                        style={{ width: '200px', height: 'auto' }} 
+                        style={{ width: '200px', height: '100' }} 
                     />
                     </center>
 

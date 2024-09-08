@@ -93,12 +93,14 @@ export default function QuizIntro() {
 
                         <br/>
                         <img
-                            src="quiz-app/app/assets/harvard-medschool-logo.png"
-                            alt="Harvard Med School Logo"
+                            src="/assets/harvard-logo.png"
+                            alt="Harvard Logo"
                             style={{
+                            // display: 'flex',
                             width: '150px',
-                            height: 'auto',
-                            marginTop: '20px', // Add margin to create space between button and image
+                            height: '80',
+                            marginTop: '20px',
+
                             }}
                         />
                     </center>
@@ -109,20 +111,7 @@ export default function QuizIntro() {
                         <Quiz name={name} />
                     ) : (
                         <>
-                            {/* <div className="mb-3">
-                                <label htmlFor="nameInput"
-                                    className="form-label">
-                                    Enter Your Name:
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="nameInput"
-                                    value={name}
-                                    onChange={(e) =>
-                                        setName(e.target.value)}
-                                />
-                            </div> */}
+                            
                             <center>
                                 <button
                                     onClick={() => continQuiz(true)}
@@ -137,68 +126,14 @@ export default function QuizIntro() {
                                         outline:'none',
                                         borderRadius:'15px',
                                         boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                        
                                     }}
 
                                 >
                                 Continue
                                 </button>
 
-                                {/* <button
-                                    onClick={() => setQuizStarted(true)}
-                                    className="btn btn-primary btn-large"
-                                    style={{ 
-                                        backgroundColor: '#945DD9', 
-                                        marginRight: '13px', 
-                                        marginBottom: '13px',  
-                                        width: '110px', 
-                                        height: '90px', 
-                                        border:'none', 
-                                        outline:'none',
-                                        borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                    }}
-
-                                >
-                                    18-29
-                                </button>
-                                <br/>
-                                <button
-                                    onClick={() => setQuizStarted(true)}
-                                    className="btn btn-primary btn-large"
-                                    style={{ 
-                                        backgroundColor: '#945DD9', 
-                                        marginRight: '13px', 
-                                        marginBottom: '13px', 
-                                        width: '110px', 
-                                        height: '90px', 
-                                        border:'none', 
-                                        outline:'none',
-                                        borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                    }}
-
-                                >
-                                    30-49
-                                </button>
-
-                                <button
-                                    onClick={() => setQuizStarted(true)}
-                                    className="btn btn-primary btn-large"
-                                    style={{ 
-                                        backgroundColor: '#945DD9',
-                                        marginRight: '13px', 
-                                        marginBottom: '13px', 
-                                        width: '110px', 
-                                        height: '90px', 
-                                        border:'none', 
-                                        outline:'none',
-                                        borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                    }}
-
-                                >
-                                    50+
-                                </button> */}
+                                
                             </center>
                         </>
                     )}
