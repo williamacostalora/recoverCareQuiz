@@ -100,7 +100,7 @@ export default function Question8() {
 
 
                                 {/* <center> */}
-                                <button
+                                {/* <button
                                         style={{ 
                                             position: 'fixed',
                                             bottom: '150px',
@@ -124,7 +124,7 @@ export default function Question8() {
                                             🌟Your resilience is yo strength-keep using it to <br/>
                                             stay on track with your recovery goal.
                                         </small>
-                                    </button>   
+                                    </button>    */}
 
                                     <button
                                         style={{ 

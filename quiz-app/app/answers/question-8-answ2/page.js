@@ -103,7 +103,7 @@ export default function Question8() {
                                 <button
                                         style={{ 
                                             position: 'fixed',
-                                            bottom: '150px',
+                                            bottom: '60px',
                                             align: 'center',
                                             backgroundColor: '#F0E6FB', 
                                             marginRight: '13px', 
@@ -126,7 +126,7 @@ export default function Question8() {
                                         </small>
                                     </button>   
 
-                                    <button
+                                    {/* <button
                                         style={{ 
                                             position: 'fixed',
                                             bottom: '60px',
@@ -150,7 +150,7 @@ export default function Question8() {
                                             🍃It's okay to struggle; we're here to help you get <br/>
                                             back up to practice mindful eating, one step at a time!
                                         </small>
-                                    </button>   
+                                    </button>    */}
                                     
                                     <br/>
                                     <button
