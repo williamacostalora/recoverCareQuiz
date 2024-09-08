@@ -4,14 +4,14 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
 
 
-export default function Question8() {
+export default function Question2() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
 
-    // const continQuiz = () => {
-    //     router.push('/r1-1');
-    //   };
+    const continQuiz = () => {
+        router.push('/r1-1');
+      };
 
     return (
         <div style={{ 
@@ -23,30 +23,44 @@ export default function Question8() {
                 <div className="text-center">
                     <center>
                         <small className='mtb-1'>
-                            <span style={{ color: '#7D7D7D' }}>Understanding You</span>
+                            <span style={{ color: '#7D7D7D' }}>Profile</span>
                         </small>
                         <br/>
 
-                    {/* <img 
-                        src="/quiz-app/public/assets/q2-bar.jpeg" 
+                    <img 
+                        src="/assets/q2-bar.jpeg" 
                         alt="progress bar" 
-                        style={{ width: '200px', height: 'auto' }} 
-                    /> */}
+                        style={{ width: '200px', height: '100' }} 
+                    />
                     </center>
 
-                    <br/><br/><br/>
 
+                    <br/>
+                    <br/>
+                    <br/>
                     <center>
                         <h3 className='mb-4'>
                         <span style={{ color: '#4D4D4D' }}>
-                            Is it easy for you to get back on track <br/>with a diet or healthy eating regime?
+                            Have you ever been diagnosed with <br/>
+                            Binge Eating Disorder (BED)?
                         </span>
+                            
                         </h3>
-                        
+                        <br/>
+                        <small>
+                            
+                            <span style={{ color: '#BCA7C9' }}>It helps us enhance your experience, but rest assured, <br/>
+                            everyone is welcome, diagnosis or not.
+                            <br/>
+                            </span>
+        
+                            
+                            {/* <span style={{ color: '#A9A9A9' }}>⌛ 3 min quiz</span> */}
+                        </small>
                     </center>
                         
                     </div>
-                    <br/> <br/>
+                    <br/><br/>
                     
 
             
@@ -57,7 +71,20 @@ export default function Question8() {
                         <Quiz name={name} />
                     ) : (
                         <>
-                            
+                            {/* <div className="mb-3">
+                                <label htmlFor="nameInput"
+                                    className="form-label">
+                                    Enter Your Name:
+                                </label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="nameInput"
+                                    value={name}
+                                    onChange={(e) =>
+                                        setName(e.target.value)}
+                                />
+                            </div> */}
                             <center>
                                 <button
                                     onClick={() => continQuiz(true)}
@@ -66,8 +93,8 @@ export default function Question8() {
                                         backgroundColor: '#F0F0F0', 
                                         marginRight: '13px', 
                                         marginBottom: '13px',  
-                                        width: '150px', 
-                                        height: '100px' , 
+                                        width: '300px', 
+                                        height: '50px' , 
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
@@ -75,10 +102,11 @@ export default function Question8() {
                                     }}
 
                                 >
-                                    <span style={{ fontSize: '30px' }}>👎</span>
-                                    <br/><br/>No
+                                    {/* I'm diagnosed by a doctor. */}
+                                    <span style={{ color: 'black' }}>I'm diagnosed by a doctor.</span>
+
                                 </button>
-                                {/* <br/> */}
+                                <br/>
                                 <button
                                     onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
@@ -86,55 +114,25 @@ export default function Question8() {
                                         backgroundColor: '#F0F0F0', 
                                         marginRight: '13px', 
                                         marginBottom: '13px',  
-                                        width: '150px', 
-                                        height: '100px' , 
-                                        border:'none', 
-                                        outline:'none',
-                                        borderRadius:'15px',
-                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                    }}
-
-                                >
-                                    <span style={{ fontSize: '30px' }}>👍</span>
-                                
-                                    <br/><br/>Yes
-                                </button>
-                                <br/>
-
-                                <center>
-                                <button
-                                    style={{ 
-                                        position: 'fixed',
-                                        bottom: '60px',
-                                        align: 'center',
-                                        backgroundColor: '#F0E6FB', 
-                                        marginRight: '13px', 
-                                        marginBottom: '13px',  
                                         width: '300px', 
-                                        height: '70px' , 
+                                        height: '50px' , 
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
                                         // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                        
                                     }}
 
                                 >
-                                    <small>
-                                        🍃It's okay to struggle; we're here to help you get <br/>
-                                        back up to practice mindful eating, one step at a time!
-                                    </small>
-                                </button>   
-                                </center>
-                                
+                                    {/* I'm self-diagnosed. */}
+                                    <span style={{ color: 'black' }}>I'm self-diagnosed.</span>
+
+                                </button>
                                 <br/>
                                 <button
                                     onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
-                                        position: 'fixed',
-                                        bottom: '0',
-                                        backgroundColor: '#945DD9', 
+                                        backgroundColor: '#F0F0F0', 
                                         marginRight: '13px', 
                                         marginBottom: '13px',  
                                         width: '300px', 
@@ -142,12 +140,53 @@ export default function Question8() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                        
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
 
                                 >
-                                Continue
+                                    {/* I suspect I might have BED. */}
+                                    <span style={{ color: 'black' }}>I suspect I might have BED.</span>
+
+                                </button>
+                                <br/>
+                                <button
+                                    onClick={() => continQuiz(true)}
+                                    className="btn btn-primary btn-large"
+                                    style={{ 
+                                        backgroundColor: '#F0F0F0', 
+                                        marginRight: '13px', 
+                                        marginBottom: '13px',  
+                                        width: '300px', 
+                                        height: '50px' , 
+                                        border:'none', 
+                                        outline:'none',
+                                        borderRadius:'15px',
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                    }}
+                                >
+                                    {/* Not with BED, but another eating <br/>disorder. */}
+                                    <span style={{ color: 'black' }}>Not with BED, but another eating <br/>disorder.</span>
+
+                                </button>
+                                <br/>
+                                <button
+                                    onClick={() => continQuiz(true)}
+                                    className="btn btn-primary btn-large"
+                                    style={{ 
+                                        backgroundColor: '#F0F0F0', 
+                                        marginRight: '13px', 
+                                        marginBottom: '13px',  
+                                        width: '300px', 
+                                        height: '50px' , 
+                                        border:'none', 
+                                        outline:'none',
+                                        borderRadius:'15px',
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                    }}
+                                >
+                                    {/* Something else */}
+                                    <span style={{ color: 'black' }}>Something else</span>
+
                                 </button>
                             </center>
                         </>
