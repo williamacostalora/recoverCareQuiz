@@ -49,10 +49,6 @@ export default function Question8() {
                     <br/> <br/>
                     
 
-            
-
-                    
-
                     {quizStarted ? (
                         <Quiz name={name} />
                     ) : (
@@ -76,9 +72,10 @@ export default function Question8() {
 
                                 >
                                     <span style={{ fontSize: '30px' }}>👎</span>
-                                    <br/><br/>No
+                                    <br/><br/>
+                                    No
                                 </button>
-                                {/* <br/> */}
+                              
                                 <button
                                     onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
@@ -101,52 +98,83 @@ export default function Question8() {
                                 </button>
                                 <br/>
 
-                                <button
-                                    style={{ 
-                                        position: 'fixed',
-                                        bottom: '60px',
-                                        align: 'center',
-                                        backgroundColor: '#F0E6FB', 
-                                        marginRight: '13px', 
-                                        marginBottom: '13px',  
-                                        width: '300px', 
-                                        height: '70px' , 
-                                        border:'none', 
-                                        outline:'none',
-                                        borderRadius:'15px',
-                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                        
-                                    }}
 
-                                >
-                                    <small>
-                                        🍃It's okay to struggle; we're here to help you get <br/>
-                                        back up to practice mindful eating, one step at a time!
-                                    </small>
-                                </button>   
-                                
-                                <br/>
+                                {/* <center> */}
                                 <button
-                                    onClick={() => continQuiz(true)}
-                                    className="btn btn-primary btn-large"
-                                    style={{ 
-                                        position: 'fixed',
-                                        bottom: '0',
-                                        backgroundColor: '#945DD9', 
-                                        marginRight: '13px', 
-                                        marginBottom: '13px',  
-                                        width: '300px', 
-                                        height: '50px' , 
-                                        border:'none', 
-                                        outline:'none',
-                                        borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                        
-                                    }}
+                                        style={{ 
+                                            position: 'fixed',
+                                            bottom: '150px',
+                                            align: 'center',
+                                            backgroundColor: '#F0E6FB', 
+                                            marginRight: '13px', 
+                                            marginBottom: '13px',  
+                                            width: '300px', 
+                                            height: '70px' , 
+                                            border:'none', 
+                                            outline:'none',
+                                            borderRadius:'15px',
+                                            // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                            
+                                        }}
 
-                                >
-                                Continue
-                                </button>
+                                    >
+                                        <small>
+                                            🌟Your resilience is yo strength-keep using it to <br/>
+                                            stay on track with your recovery goal.
+                                        </small>
+                                    </button>   
+
+                                    <button
+                                        style={{ 
+                                            position: 'fixed',
+                                            bottom: '60px',
+                                            align: 'center',
+                                            backgroundColor: '#F0E6FB', 
+                                            marginRight: '13px', 
+                                            marginBottom: '13px',  
+                                            width: '300px', 
+                                            height: '70px' , 
+                                            border:'none', 
+                                            outline:'none',
+                                            borderRadius:'15px',
+                                            // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                            
+                                        }}
+
+                                    >
+                                        <small>
+                                            🍃It's okay to struggle; we're here to help you get <br/>
+                                            back up to practice mindful eating, one step at a time!
+                                        </small>
+                                    </button>   
+                                    
+                                    <br/>
+                                    <button
+                                        onClick={() => continQuiz(true)}
+                                        className="btn btn-primary btn-large"
+                                        style={{ 
+                                            // display: 'flex',
+                                            // justifyContent:'center',
+                                            // alignItems:'center',
+                                            // // height: '100vh',
+                                            position: 'fixed',
+                                            bottom: '0',
+                                            backgroundColor: '#945DD9', 
+                                            marginRight: '13px', 
+                                            marginBottom: '13px',  
+                                            width: '300px', 
+                                            height: '50px' , 
+                                            border:'none', 
+                                            outline:'none',
+                                            borderRadius:'15px',
+                                            boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+                                            
+                                        }}
+
+                                    >
+                                    Continue
+                                    </button>
+                                {/* </center> */}
                             </center>
                         </>
                     )}
