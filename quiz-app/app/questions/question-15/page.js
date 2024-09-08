@@ -2,17 +2,15 @@
 'use client'
 import { useState } from "react";
 import { useRouter } from 'next/navigation'
-import Image from 'next/image'
- 
 
 
-export default function Question1() {
+export default function Question15() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
 
     const continQuiz = () => {
-        router.push('/questions/question-2');
+        router.push('/questions/question-5');
       };
 
     return (
@@ -24,35 +22,37 @@ export default function Question1() {
             <div className="container mt-5 ml-5">
                 <div className="text-center">
                     <center>
-
                         <small className='mtb-1'>
-                            <span style={{ color: '#7D7D7D' }}>Profile</span>
+                            <span style={{ color: '#7D7D7D' }}>Understanding You</span>
                         </small>
                         <br/><br/>
-                        <img 
-                            src="/assets/q2-bar.jpeg" 
-                            alt="progress bar" 
-                            style={{ width: '200px', height: '100' }} 
-                        />
-                        
+
+                    {/* <img 
+                        src="/quiz-app/public/assets/q2-bar.jpeg" 
+                        alt="progress bar" 
+                        style={{ width: '200px', height: 'auto' }} 
+                    /> */}
+                    <img 
+                        src="/assets/q2-bar.jpeg" 
+                        alt="progress bar" 
+                        style={{ width: '200px', height: '100' }} 
+                    />
                     </center>
 
-                    <br/>
-                    <br/>
+                    <br/><br/>
+
                     <center>
                         <h3 className='mb-4'>
-                            
                         <span style={{ color: '#4D4D4D' }}>
-                            Which gender do you identify with? <br/>
-                           
+                            Do you have strong feelings of self- <br/>
+                            hate or guilt if you overeat?
                         </span>
-                            
                         </h3>
-                        <br/>
                         
                     </center>
                         
                     </div>
+                    <br/>
                     
 
             
@@ -63,20 +63,7 @@ export default function Question1() {
                         <Quiz name={name} />
                     ) : (
                         <>
-                            {/* <div className="mb-3">
-                                <label htmlFor="nameInput"
-                                    className="form-label">
-                                    Enter Your Name:
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="nameInput"
-                                    value={name}
-                                    onChange={(e) =>
-                                        setName(e.target.value)}
-                                />
-                            </div> */}
+                            
                             <center>
                                 <button
                                     onClick={() => continQuiz(true)}
@@ -90,12 +77,11 @@ export default function Question1() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                       
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
 
                                 >
-                                    {/* Female */}
-                                    <span style={{ color: 'black' }}>Female</span>
+                                    All the time
                                 </button>
                                 <br/>
                                 <button
@@ -110,12 +96,11 @@ export default function Question1() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
 
                                 >
-                                    {/* Male */}
-                                    <span style={{ color: 'black' }}>Male</span>
+                                    A lot of the time
                                 </button>
                                 <br/>
                                 <button
@@ -130,13 +115,11 @@ export default function Question1() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
 
                                 >
-                                    {/* Non-binary */}
-                                    <span style={{ color: 'black' }}>Non-binary</span>
-
+                                    Sometimes
                                 </button>
                                 <br/>
                                 <button
@@ -151,17 +134,14 @@ export default function Question1() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
                                 >
-                                    {/* Prefer not to answer */}
-                                    <span style={{ color: 'black' }}>                                    Prefer not to answer
-                                    </span>
-
+                                    Rarely
                                 </button>
                                 <br/>
-                                {/* <button
-                                    onClick={() => setQuizStarted(true)}
+                                <button
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -172,11 +152,11 @@ export default function Question1() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
                                 >
-                                    Something else
-                                </button> */}
+                                    Never
+                                </button>
                             </center>
                         </>
                     )}
