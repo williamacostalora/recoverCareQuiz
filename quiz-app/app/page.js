@@ -2,10 +2,16 @@
 'use client'
 import { useState } from "react";
 import Quiz from "./quiz";
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
+    const router = useRouter();
+
+    const startQuiz = () => {
+        router.push('/quiz-intro');
+      };
 
     return (
         <div style={{ 
@@ -61,7 +67,7 @@ export default function Home() {
                             />
                         </div> */}
                         <center><button
-                            onClick={() => setQuizStarted(true)}
+                            onClick={() => startQuiz(true)}
                             className="btn btn-primary btn-large"
                             style={{ 
                                 backgroundColor: '#945DD9', 
@@ -80,7 +86,7 @@ export default function Home() {
                         </button>
 
                         <button
-                            onClick={() => setQuizStarted(true)}
+                            onClick={() => startQuiz(true)}
                             className="btn btn-primary btn-large"
                             style={{ 
                                 backgroundColor: '#945DD9', 
@@ -99,7 +105,7 @@ export default function Home() {
                         </button>
                         <br/>
                         <button
-                            onClick={() => setQuizStarted(true)}
+                            onClick={() => startQuiz(true)}
                             className="btn btn-primary btn-large"
                             style={{ 
                                 backgroundColor: '#945DD9', 
@@ -118,7 +124,7 @@ export default function Home() {
                         </button>
 
                         <button
-                            onClick={() => setQuizStarted(true)}
+                            onClick={() => startQuiz(true)}
                             className="btn btn-primary btn-large"
                             style={{ 
                                 backgroundColor: '#945DD9',
