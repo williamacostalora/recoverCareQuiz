@@ -4,14 +4,14 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
 
 
-export default function Question8() {
+export default function Question8No() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
 
-    // const continQuiz = () => {
-    //     router.push('/r1-1');
-    //   };
+    const continQuiz = () => {
+        router.push('/questions/question-9');
+      };
 
     return (
         <div style={{ 
@@ -32,9 +32,16 @@ export default function Question8() {
                         alt="progress bar" 
                         style={{ width: '200px', height: 'auto' }} 
                     /> */}
+                    <img
+                        src="/assets/q2-bar.jpeg" 
+                        alt="progress bar" 
+                        style={{ width: '200px', height: '100' }} 
+                    >
+                    </img>
                     </center>
 
                     <br/><br/><br/>
+                    
 
                     <center>
                         <h3 className='mb-4'>
@@ -56,7 +63,7 @@ export default function Question8() {
                             
                             <center>
                                 <button
-                                    onClick={() => continQuiz(true)}
+                                    // onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -77,7 +84,7 @@ export default function Question8() {
                                 </button>
                               
                                 <button
-                                    onClick={() => continQuiz(true)}
+                                    // onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -96,35 +103,7 @@ export default function Question8() {
                                 
                                     <br/><br/>Yes
                                 </button>
-                                <br/>
-
-
-                                {/* <center> */}
-                                {/* <button
-                                        style={{ 
-                                            position: 'fixed',
-                                            bottom: '150px',
-                                            align: 'center',
-                                            backgroundColor: '#F0E6FB', 
-                                            marginRight: '13px', 
-                                            marginBottom: '13px',  
-                                            width: '300px', 
-                                            height: '70px' , 
-                                            border:'none', 
-                                            outline:'none',
-                                            borderRadius:'15px',
-                                            left: '50%',
-                                            transform: 'translateX(-50%)'
-                                            // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                            
-                                        }}
-
-                                    >
-                                        <small>
-                                            🌟Your resilience is yo strength-keep using it to <br/>
-                                            stay on track with your recovery goal.
-                                        </small>
-                                    </button>    */}
+                                <br/>                              
 
                                     <button
                                         style={{ 
@@ -178,7 +157,7 @@ export default function Question8() {
                                         }}
 
                                     >
-                                    Continue
+                                        Continue
                                     </button>
                                 {/* </center> */}
                             </center>

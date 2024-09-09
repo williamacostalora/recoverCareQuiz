@@ -62,7 +62,7 @@ export default function QuizIntro() {
                                 // marginRight: '13px', 
                                 marginBottom: '13px',  
                                 width: '220px', 
-                                height: '250px' , 
+                                height: '260px' , 
                                 border:'none', 
                                 outline:'none',
                                 borderRadius:'15px',
@@ -71,23 +71,15 @@ export default function QuizIntro() {
                                 textAlign:'center'
                             }}
                             >
-                            <span 
-                                style={{ 
-                                    fontSize: '12px', 
-                                    color: 'gray', 
-                                    marginBottom: '5px' 
-                                }}>
-                                SAMPLE
-                            </span>
-                            <br/><br/>
+                            
 
-                            YOUR BINGE EATING score
-                            <br/>
-
-                            86%
-                            <br/>
-
-                            Very High
+                                <img
+                                    src="/assets/sample-score.jpeg" 
+                                    alt="progress bar" 
+                                    style={{ width: '200px', height: '150' }} 
+                                >
+                                </img>
+                          
 
                         </button>
 

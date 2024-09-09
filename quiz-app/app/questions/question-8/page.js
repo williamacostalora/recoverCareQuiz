@@ -9,9 +9,18 @@ export default function Question8() {
     const [name, setName] = useState('');
     const router = useRouter();
 
-    const continQuiz = () => {
-        router.push(path);
+    const continNo = () => {
+        // router.push(path);
+        router.push('/answers/question-8-answ1');
+
       };
+
+    const continYes = () => {
+    // router.push(path);
+    router.push('/answers/question-8-answ2');
+
+    };
+
 
     return (
         <div style={{ 
@@ -25,15 +34,18 @@ export default function Question8() {
                         <small className='mtb-1'>
                             <span style={{ color: '#7D7D7D' }}>Understanding You</span>
                         </small>
-                        <br/>
 
-                    {/* <img 
-                        src="/quiz-app/public/assets/q2-bar.jpeg" 
+                        <br/><br/>
+                    
+
+                    <img
+                        src="/assets/q2-bar.jpeg" 
                         alt="progress bar" 
-                        style={{ width: '200px', height: 'auto' }} 
-                    /> */}
+                        style={{ width: '200px', height: '100' }} 
+                    >
+                    </img>
                     </center>
-
+                    
                     <br/><br/><br/>
 
                     <center>
@@ -56,7 +68,7 @@ export default function Question8() {
                             
                             <center>
                                 <button
-                                    onClick={() => continQuiz('/answers/question-8-answ1')}
+                                    onClick={() => continNo('/answers/question-8-answ1')}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -77,7 +89,7 @@ export default function Question8() {
                                 </button>
                               
                                 <button
-                                    onClick={() => continQuiz('/answers/question-8-answ2')}
+                                    onClick={() => continYes('/answers/question-8-answ2')}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -96,91 +108,6 @@ export default function Question8() {
                                 
                                     <br/><br/>Yes
                                 </button>
-                                <br/>
-
-
-                                {/* <center> */}
-                                {/* <button
-                                        style={{ 
-                                            position: 'fixed',
-                                            bottom: '150px',
-                                            align: 'center',
-                                            backgroundColor: '#F0E6FB', 
-                                            marginRight: '13px', 
-                                            marginBottom: '13px',  
-                                            width: '300px', 
-                                            height: '70px' , 
-                                            border:'none', 
-                                            outline:'none',
-                                            borderRadius:'15px',
-                                            left: '50%',
-                                            transform: 'translateX(-50%)'
-                                            // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                            
-                                        }}
-
-                                    >
-                                        <small>
-                                            🌟Your resilience is yo strength-keep using it to <br/>
-                                            stay on track with your recovery goal.
-                                        </small>
-                                    </button>    */}
-
-                                    {/* <button
-                                        style={{ 
-                                            position: 'fixed',
-                                            bottom: '60px',
-                                            align: 'center',
-                                            backgroundColor: '#F0E6FB', 
-                                            marginRight: '13px', 
-                                            marginBottom: '13px',  
-                                            width: '300px', 
-                                            height: '70px' , 
-                                            border:'none', 
-                                            outline:'none',
-                                            borderRadius:'15px',
-                                            left: '50%',
-                                            transform: 'translateX(-50%)'
-                                            // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                            
-                                        }}
-
-                                    >
-                                        <small>
-                                            🍃It's okay to struggle; we're here to help you get <br/>
-                                            back up to practice mindful eating, one step at a time!
-                                        </small>
-                                    </button>    */}
-                                    
-                                    <br/>
-                                    <button
-                                        onClick={() => continQuiz(true)}
-                                        className="btn btn-primary btn-large"
-                                        style={{ 
-                                            // display: 'flex',
-                                            // justifyContent:'center',
-                                            // alignItems:'center',
-                                            // // height: '100vh',
-                                            position: 'fixed',
-                                            bottom: '0',
-                                            backgroundColor: '#945DD9', 
-                                            marginRight: '13px', 
-                                            marginBottom: '13px',  
-                                            width: '300px', 
-                                            height: '50px' , 
-                                            border:'none', 
-                                            outline:'none',
-                                            borderRadius:'15px',
-                                            boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
-                                            left: '50%',
-                                            transform: 'translateX(-50%)'
-                                            
-                                        }}
-
-                                    >
-                                    Continue
-                                    </button>
-                                {/* </center> */}
                             </center>
                         </>
                     )}
