@@ -17,7 +17,7 @@ export default function Question8() {
 
     const continYes = () => {
     // router.push(path);
-    router.push('/answers/question-8-answ1');
+    router.push('/answers/question-8-answ2');
 
     };
 
