@@ -27,21 +27,16 @@ export default function Question8No() {
                         </small>
                         <br/>
 
-                    {/* <img 
-                        src="/quiz-app/public/assets/q2-bar.jpeg" 
-                        alt="progress bar" 
-                        style={{ width: '200px', height: 'auto' }} 
-                    /> */}
-                    <img
-                        src="/assets/q2-bar.jpeg" 
-                        alt="progress bar" 
-                        style={{ width: '200px', height: '100' }} 
-                    >
-                    </img>
+                        <img
+                            src="/assets/q2-bar.jpeg" 
+                            alt="progress bar" 
+                            style={{ width: '200px', height: '100' }} 
+                        >
+                        </img>
+                        
                     </center>
 
                     <br/><br/><br/>
-                    
 
                     <center>
                         <h3 className='mb-4'>
@@ -63,7 +58,6 @@ export default function Question8No() {
                             
                             <center>
                                 <button
-                                    // onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -84,7 +78,6 @@ export default function Question8No() {
                                 </button>
                               
                                 <button
-                                    // onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -100,8 +93,8 @@ export default function Question8No() {
 
                                 >
                                     <span style={{ fontSize: '30px' }}>👍</span>
-                                
-                                    <br/><br/>Yes
+                                    <br/><br/>
+                                    Yes
                                 </button>
                                 <br/>                              
 
