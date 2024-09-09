@@ -10,7 +10,7 @@ export default function Question15() {
     const router = useRouter();
 
     const continQuiz = () => {
-        router.push('/questions/question-5');
+        router.push('/questions/question-16');
       };
 
     return (

@@ -34,7 +34,7 @@ export default function Question8() {
                         <small className='mtb-1'>
                             <span style={{ color: '#7D7D7D' }}>Understanding You</span>
                         </small>
-                        <br/>
+                        <br/><br/>
                     
 
                         <img
@@ -45,7 +45,7 @@ export default function Question8() {
                         </img>
                     </center>
                     
-                    <br/><br/><br/>
+                    <br/>
 
                     <center>
                         <h3 className='mb-4'>

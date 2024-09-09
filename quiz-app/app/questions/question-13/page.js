@@ -57,104 +57,103 @@ export default function Question13() {
 
 
                     {quizStarted ? (
-                        <Quiz name={name} />
-                    ) : (
-                        <>
-                            <center>
-                                <button
-                                    onClick={() => continQuiz(true)}
-                                    className="btn btn-primary btn-large"
-                                    style={{ 
-                                        backgroundColor: '#F0F0F0', 
-                                        marginRight: '13px', 
-                                        marginBottom: '13px',  
-                                        width: '50px', 
-                                        height: '60px' , 
-                                        border:'none', 
-                                        outline:'none',
-                                        borderRadius:'15px',
-                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                    }}
+                    <Quiz name={name} />
+                ) : (
+                    <>
+                        <center>
+                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '13px' }}>
+                                <div style={{ textAlign: 'center' }}>
+                                    <button
+                                        onClick={() => continQuiz(true)}
+                                        className="btn btn-primary btn-large"
+                                        style={{ 
+                                            backgroundColor: '#F0F0F0', 
+                                            width: '50px', 
+                                            height: '60px', 
+                                            border: 'none', 
+                                            outline: 'none',
+                                            borderRadius: '15px',
+                                        }}
+                                    >
+                                        1
+                                    </button>
+                                    <div style={{ marginTop: '10px' }}>Not at all</div>
+                                </div>
+                                <div style={{ textAlign: 'center' }}>
+                                    <button
+                                        onClick={() => continQuiz(true)}
+                                        className="btn btn-primary btn-large"
+                                        style={{ 
+                                            backgroundColor: '#F0F0F0', 
+                                            width: '50px', 
+                                            height: '60px', 
+                                            border: 'none', 
+                                            outline: 'none',
+                                            borderRadius: '15px',
+                                        }}
+                                    >
+                                        2
+                                    </button>
+                                    <div style={{ marginTop: '10px', color: '#FFFFFF' }}>.</div>
 
-                                >
-                                    1
-                                </button>
-                                <button
-                                    onClick={() => continQuiz(true)}
-                                    className="btn btn-primary btn-large"
-                                    style={{ 
-                                        backgroundColor: '#F0F0F0', 
-                                        marginRight: '13px', 
-                                        marginBottom: '13px',  
-                                        width: '50px', 
-                                        height: '60px' , 
-                                        border:'none', 
-                                        outline:'none',
-                                        borderRadius:'15px',
-                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                    }}
+                                </div>
+                                <div style={{ textAlign: 'center' }}>
+                                    <button
+                                        onClick={() => continQuiz(true)}
+                                        className="btn btn-primary btn-large"
+                                        style={{ 
+                                            backgroundColor: '#F0F0F0', 
+                                            width: '50px', 
+                                            height: '60px', 
+                                            border: 'none', 
+                                            outline: 'none',
+                                            borderRadius: '15px',
+                                        }}
+                                    >
+                                        3
+                                    </button>
+                                    <div style={{ marginTop: '10px', color: '#FFFFFF' }}>.</div>
 
-                                >
-                                    2
-                                </button>
-                                <button
-                                    onClick={() => continQuiz(true)}
-                                    className="btn btn-primary btn-large"
-                                    style={{ 
-                                        backgroundColor: '#F0F0F0', 
-                                        marginRight: '13px', 
-                                        marginBottom: '13px',  
-                                        width: '50px', 
-                                        height: '60px' , 
-                                        border:'none', 
-                                        outline:'none',
-                                        borderRadius:'15px',
-                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                    }}
+                                </div>
+                                <div style={{ textAlign: 'center' }}>
+                                    <button
+                                        onClick={() => continQuiz(true)}
+                                        className="btn btn-primary btn-large"
+                                        style={{ 
+                                            backgroundColor: '#F0F0F0', 
+                                            width: '50px', 
+                                            height: '60px', 
+                                            border: 'none', 
+                                            outline: 'none',
+                                            borderRadius: '15px',
+                                        }}
+                                    >
+                                        4
+                                    </button>
+                                    <div style={{ marginTop: '10px', color: '#FFFFFF' }}>.</div>
 
-                                >
-                                    3
-                                </button>
-                                <button
-                                    onClick={() => continQuiz(true)}
-                                    className="btn btn-primary btn-large"
-                                    style={{ 
-                                        backgroundColor: '#F0F0F0', 
-                                        marginRight: '13px', 
-                                        marginBottom: '13px',  
-                                        width: '50px', 
-                                        height: '60px' , 
-                                        border:'none', 
-                                        outline:'none',
-                                        borderRadius:'15px',
-                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                    }}
-                                >
-                                    4
-                                </button>
-                                <button
-                                    onClick={() => continQuiz(true)}
-                                    className="btn btn-primary btn-large"
-                                    style={{ 
-                                        backgroundColor: '#F0F0F0', 
-                                        marginRight: '13px', 
-                                        marginBottom: '13px',  
-                                        width: '50px', 
-                                        height: '60px' , 
-                                        border:'none', 
-                                        outline:'none',
-                                        borderRadius:'15px',
-                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                    }}
-                                >
-                                    5
-                                </button>
-                            </center>
-
-                            Not at all
-                            Totally
-                        </>
-                    )}
+                                </div>
+                                <div style={{ textAlign: 'center' }}>
+                                    <button
+                                        onClick={() => continQuiz(true)}
+                                        className="btn btn-primary btn-large"
+                                        style={{ 
+                                            backgroundColor: '#F0F0F0', 
+                                            width: '50px', 
+                                            height: '60px', 
+                                            border: 'none', 
+                                            outline: 'none',
+                                            borderRadius: '15px',
+                                        }}
+                                    >
+                                        5
+                                    </button>
+                                    <div style={{ marginTop: '10px' }}>Totally</div>
+                                </div>
+                            </div>
+                        </center>
+                    </>
+                )}
             </div>
             
         </div>
