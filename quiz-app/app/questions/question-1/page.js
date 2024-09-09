@@ -37,7 +37,7 @@ export default function Question1() {
                         
                     </center>
 
-                    <br/>
+                    {/* <br/> */}
                     <br/>
                     <center>
                         <h3 className='mb-4'>

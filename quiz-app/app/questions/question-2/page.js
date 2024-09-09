@@ -26,7 +26,7 @@ export default function Question2() {
                         <small className='mtb-1'>
                             <span style={{ color: '#7D7D7D' }}>Profile</span>
                         </small>
-                        <br/>
+                        <br/><br/>
 
                     <img 
                         src="/assets/q2-bar.jpeg" 
@@ -37,8 +37,8 @@ export default function Question2() {
 
 
                     <br/>
-                    <br/>
-                    <br/>
+                    {/* <br/> */}
+                    {/* <br/> */}
                     <center>
                         <h3 className='mb-4'>
                         <span style={{ color: '#4D4D4D' }}>
