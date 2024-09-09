@@ -34,15 +34,16 @@ export default function Question8() {
                         <small className='mtb-1'>
                             <span style={{ color: '#7D7D7D' }}>Understanding You</span>
                         </small>
-                        <br/>
+
+                        <br/><br/>
                     
 
-                        <img
-                            src="/assets/q2-bar.jpeg" 
-                            alt="progress bar" 
-                            style={{ width: '200px', height: '100' }} 
-                        >
-                        </img>
+                    <img
+                        src="/assets/q2-bar.jpeg" 
+                        alt="progress bar" 
+                        style={{ width: '200px', height: '100' }} 
+                    >
+                    </img>
                     </center>
                     
                     <br/><br/><br/>

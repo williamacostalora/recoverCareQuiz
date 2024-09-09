@@ -32,9 +32,16 @@ export default function Question8No() {
                         alt="progress bar" 
                         style={{ width: '200px', height: 'auto' }} 
                     /> */}
+                    <img
+                        src="/assets/q2-bar.jpeg" 
+                        alt="progress bar" 
+                        style={{ width: '200px', height: '100' }} 
+                    >
+                    </img>
                     </center>
 
                     <br/><br/><br/>
+                    
 
                     <center>
                         <h3 className='mb-4'>
