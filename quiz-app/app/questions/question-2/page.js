@@ -11,7 +11,7 @@ export default function Question2() {
 
     const continQuiz = () => {
         // router.push('/loading/r1-1');
-        router.push('/questions/question-3');
+        router.push('/loading/r1-1');
       };
 
     return (
