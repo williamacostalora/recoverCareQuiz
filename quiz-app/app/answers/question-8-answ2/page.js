@@ -4,14 +4,14 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
 
 
-export default function Question8() {
+export default function Question8Yes() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
 
-    // const continQuiz = () => {
-    //     router.push('/r1-1');
-    //   };
+    const continQuiz = () => {
+        router.push('/questions/question-9');
+      };
 
     return (
         <div style={{ 
@@ -26,12 +26,14 @@ export default function Question8() {
                             <span style={{ color: '#7D7D7D' }}>Understanding You</span>
                         </small>
                         <br/>
+                    
 
-                    {/* <img 
-                        src="/quiz-app/public/assets/q2-bar.jpeg" 
-                        alt="progress bar" 
-                        style={{ width: '200px', height: 'auto' }} 
-                    /> */}
+                        <img
+                            src="/assets/q2-bar.jpeg" 
+                            alt="progress bar" 
+                            style={{ width: '200px', height: '100' }} 
+                        >
+                        </img>
                     </center>
 
                     <br/><br/><br/>
@@ -56,7 +58,6 @@ export default function Question8() {
                             
                             <center>
                                 <button
-                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -77,7 +78,6 @@ export default function Question8() {
                                 </button>
                               
                                 <button
-                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -126,31 +126,7 @@ export default function Question8() {
                                         </small>
                                     </button>   
 
-                                    {/* <button
-                                        style={{ 
-                                            position: 'fixed',
-                                            bottom: '60px',
-                                            align: 'center',
-                                            backgroundColor: '#F0E6FB', 
-                                            marginRight: '13px', 
-                                            marginBottom: '13px',  
-                                            width: '300px', 
-                                            height: '70px' , 
-                                            border:'none', 
-                                            outline:'none',
-                                            borderRadius:'15px',
-                                            left: '50%',
-                                            transform: 'translateX(-50%)'
-                                            // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
-                                            
-                                        }}
-
-                                    >
-                                        <small>
-                                            🍃It's okay to struggle; we're here to help you get <br/>
-                                            back up to practice mindful eating, one step at a time!
-                                        </small>
-                                    </button>    */}
+                                    
                                     
                                     <br/>
                                     <button
