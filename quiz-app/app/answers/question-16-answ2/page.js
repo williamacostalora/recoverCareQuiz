@@ -4,23 +4,28 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
 
 
-export default function Question8Yes() {
+export default function Question16Yes() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
 
-    const [message, setMessage] = useState("🌟 Your resilience is your strength—keep using it to stay on track with your recovery goal.");
+
+
+
+    const [message, setMessage] = useState("💪 It's normal to feel this way. Being tough on yourself is common, but remember, you deserve the same kindness you give others --we're here to help with that!");
 
     const handleYesClick = () => {
-      setMessage("🌟 Your resilience is your strength—keep using it to stay on track with your recovery goal.");
-    };
-  
+        setMessage("💪 It's normal to feel this way. Being tough on yourself is common, but remember, you deserve the same kindness you give others --we're here to help with that!");
+      };
+    
     const handleNoClick = () => {
-      setMessage("🍃 It's okay to struggle; we're here to help you get back up to practice mindful eating, one step at a time!");
-    };
+        setMessage("🍃 It's okay to struggle; we're here to help you get back up to practice mindful eating, one step at a time!");
+      };
+
+
 
     const continQuiz = () => {
-        router.push('/questions/question-9');
+        router.push('/questions/question-17');
       };
 
     return (
@@ -51,7 +56,7 @@ export default function Question8Yes() {
                     <center>
                         <h3 className='mb-4'>
                         <span style={{ color: '#4D4D4D' }}>
-                            Is it easy for you to get back on track <br/>with a diet or healthy eating regime?
+                            Are you your harshest critic?
                         </span>
                         </h3>
                         
@@ -68,7 +73,6 @@ export default function Question8Yes() {
                             
                             <center>
                                 <button
-                                    onClick={handleNoClick}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -89,7 +93,6 @@ export default function Question8Yes() {
                                 </button>
                               
                                 <button
-                                    onClick={handleYesClick}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -110,19 +113,18 @@ export default function Question8Yes() {
                                 </button>
                                 <br/>
 
+
                                 {/* <center> */}
                                 <button
-                                        style={{
-                                            fontSize: '18px',
+                                        style={{ 
                                             position: 'fixed',
                                             bottom: '60px',
                                             align: 'center',
                                             backgroundColor: '#F0E6FB', 
                                             marginRight: '13px', 
-                                            marginBottom: '25px',
-                                            color: '4D4D4D',
-                                            width: '300px', 
-                                            height: '80px' , 
+                                            marginBottom: '13px',  
+                                            width: '320px', 
+                                            height: '90px' , 
                                             border:'none', 
                                             outline:'none',
                                             borderRadius:'15px',
@@ -134,6 +136,11 @@ export default function Question8Yes() {
 
                                     >
                                         <small>
+                                            {/* <strong><span>💪 It's normal to feel this way. </span> </strong>
+                                            <br/>
+                                            Being tough on yourself is common, but remember, <br/>
+                                            you deserve the same kindness you give others -- <br/>
+                                            we're here to help with that! */}
                                             <small>{message}</small>
                                         </small>
                                     </button>   
@@ -154,7 +161,7 @@ export default function Question8Yes() {
                                             backgroundColor: '#945DD9', 
                                             marginRight: '13px', 
                                             marginBottom: '13px',  
-                                            width: '300px', 
+                                            width: '320px', 
                                             height: '50px' , 
                                             border:'none', 
                                             outline:'none',

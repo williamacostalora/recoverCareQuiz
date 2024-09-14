@@ -4,20 +4,18 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
 
 
-export default function Question16() {
+export default function Question17() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
-
-    const continNo = () => {
-        router.push('/answers/question-16-answ1');
-
+    
+    const continQuiz = () => {
+        router.push('/questions/question-18');
       };
 
-    const continYes = () => {
-    router.push('/answers/question-16-answ2');
-
-    };
+    // const continQuiz = () => {
+    //     router.push('/r1-1');
+    //   };
 
     return (
         <div style={{ 
@@ -45,7 +43,7 @@ export default function Question16() {
                     <center>
                         <h3 className='mb-4'>
                         <span style={{ color: '#4D4D4D' }}>
-                            Are you your harshest critic?
+                            Do you feel self-conscious eating around other people?
                         </span>
                         </h3>
                         
@@ -78,7 +76,7 @@ export default function Question16() {
 
                                 >
                                     <span style={{ fontSize: '30px' }}>👎</span>
-                                    <br/><br/>
+                                    <br/>
                                     No
                                 </button>
                               
@@ -100,8 +98,7 @@ export default function Question16() {
                                 >
                                     <span style={{ fontSize: '30px' }}>👍</span>
                                 
-                                    <br/><br/>
-                                    Yes
+                                    <br/>Yes
                                 </button>
                                 <br/>
                                     

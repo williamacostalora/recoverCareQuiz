@@ -39,7 +39,7 @@ export default function Question15() {
                     />
                     </center>
 
-                    <br/><br/>
+                    <br/>
 
                     <center>
                         <h3 className='mb-4'>

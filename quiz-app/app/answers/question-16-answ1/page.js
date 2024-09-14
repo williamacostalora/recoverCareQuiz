@@ -4,23 +4,23 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
 
 
-export default function Question8Yes() {
+export default function Question16No() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
 
-    const [message, setMessage] = useState("🌟 Your resilience is your strength—keep using it to stay on track with your recovery goal.");
+    const [message, setMessage] = useState("🌼 Your self-assurance is impressive! Great job practicing self-compassion -- keep nurturing that kindness toward yourself!");
 
     const handleYesClick = () => {
-      setMessage("🌟 Your resilience is your strength—keep using it to stay on track with your recovery goal.");
-    };
-  
+        setMessage("💪 It's normal to feel this way. Being tough on yourself is common, but remember, you deserve the same kindness you give others --we're here to help with that!");
+      };
+    
     const handleNoClick = () => {
-      setMessage("🍃 It's okay to struggle; we're here to help you get back up to practice mindful eating, one step at a time!");
-    };
+        setMessage("🌼 Your self-assurance is impressive! Great job practicing self-compassion -- keep nurturing that kindness toward yourself!");
+      };
 
     const continQuiz = () => {
-        router.push('/questions/question-9');
+        router.push('/questions/question-17');
       };
 
     return (
@@ -36,14 +36,14 @@ export default function Question8Yes() {
                             <span style={{ color: '#7D7D7D' }}>Understanding You</span>
                         </small>
                         <br/><br/>
-                    
 
-                    <img
-                        src="/assets/q2-bar.jpeg" 
-                        alt="progress bar" 
-                        style={{ width: '200px', height: '100' }} 
-                    >
-                    </img>
+                        <img
+                            src="/assets/q2-bar.jpeg" 
+                            alt="progress bar" 
+                            style={{ width: '200px', height: '100' }} 
+                        >
+                        </img>
+                        
                     </center>
 
                     <br/>
@@ -51,7 +51,7 @@ export default function Question8Yes() {
                     <center>
                         <h3 className='mb-4'>
                         <span style={{ color: '#4D4D4D' }}>
-                            Is it easy for you to get back on track <br/>with a diet or healthy eating regime?
+                            Are you your harshest critic?
                         </span>
                         </h3>
                         
@@ -105,29 +105,27 @@ export default function Question8Yes() {
 
                                 >
                                     <span style={{ fontSize: '30px' }}>👍</span>
-                                
-                                    <br/><br/>Yes
+                                    <br/><br/>
+                                    Yes
                                 </button>
-                                <br/>
+                                <br/>                              
 
-                                {/* <center> */}
-                                <button
-                                        style={{
-                                            fontSize: '18px',
+                                    <button
+                                        style={{ 
                                             position: 'fixed',
                                             bottom: '60px',
                                             align: 'center',
                                             backgroundColor: '#F0E6FB', 
                                             marginRight: '13px', 
-                                            marginBottom: '25px',
-                                            color: '4D4D4D',
-                                            width: '300px', 
-                                            height: '80px' , 
+                                            marginBottom: '13px',  
+                                            width: '320px', 
+                                            height: '90px' , 
                                             border:'none', 
                                             outline:'none',
                                             borderRadius:'15px',
                                             left: '50%',
-                                            transform: 'translateX(-50%)'
+                                            transform: 'translateX(-50%)', 
+                                            fontSize:'15px'
                                             // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                             
                                         }}
@@ -137,8 +135,6 @@ export default function Question8Yes() {
                                             <small>{message}</small>
                                         </small>
                                     </button>   
-
-                                    
                                     
                                     <br/>
                                     <button
@@ -154,7 +150,7 @@ export default function Question8Yes() {
                                             backgroundColor: '#945DD9', 
                                             marginRight: '13px', 
                                             marginBottom: '13px',  
-                                            width: '300px', 
+                                            width: '320px', 
                                             height: '50px' , 
                                             border:'none', 
                                             outline:'none',
@@ -166,7 +162,7 @@ export default function Question8Yes() {
                                         }}
 
                                     >
-                                    Continue
+                                        Continue
                                     </button>
                                 {/* </center> */}
                             </center>
