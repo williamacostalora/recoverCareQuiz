@@ -9,6 +9,16 @@ export default function Question8Yes() {
     const [name, setName] = useState('');
     const router = useRouter();
 
+    const [message, setMessage] = useState("");
+
+    const handleYesClick = () => {
+      setMessage("🌟 Your resilience is your strength—keep using it to stay on track with your recovery goal.");
+    };
+  
+    const handleNoClick = () => {
+      setMessage("🍃 It's okay to struggle; we're here to help you get back up to practice mindful eating, one step at a time!");
+    };
+
     const continQuiz = () => {
         router.push('/questions/question-9');
       };
@@ -58,6 +68,7 @@ export default function Question8Yes() {
                             
                             <center>
                                 <button
+                                    onClick={handleNoClick}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -78,6 +89,7 @@ export default function Question8Yes() {
                                 </button>
                               
                                 <button
+                                    onClick={handleYesClick}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -98,18 +110,19 @@ export default function Question8Yes() {
                                 </button>
                                 <br/>
 
-
                                 {/* <center> */}
                                 <button
-                                        style={{ 
+                                        style={{
+                                            fontSize: '18px',
                                             position: 'fixed',
                                             bottom: '60px',
                                             align: 'center',
                                             backgroundColor: '#F0E6FB', 
                                             marginRight: '13px', 
-                                            marginBottom: '13px',  
+                                            marginBottom: '25px',
+                                            color: '4D4D4D',
                                             width: '300px', 
-                                            height: '70px' , 
+                                            height: '80px' , 
                                             border:'none', 
                                             outline:'none',
                                             borderRadius:'15px',
@@ -121,8 +134,7 @@ export default function Question8Yes() {
 
                                     >
                                         <small>
-                                            🌟Your resilience is yo strength-keep using it to <br/>
-                                            stay on track with your recovery goal.
+                                            <small>{message}</small>
                                         </small>
                                     </button>   
 
