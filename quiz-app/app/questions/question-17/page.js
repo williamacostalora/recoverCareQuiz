@@ -60,7 +60,7 @@ export default function Question17() {
                             
                             <center>
                                 <button
-                                    onClick={() => continNo('/answers/question-16-answ1')}
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -81,7 +81,7 @@ export default function Question17() {
                                 </button>
                               
                                 <button
-                                    onClick={() => continYes('/answers/question-16-answ2')}
+                                    onClick={() => continQuiz(true)}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 

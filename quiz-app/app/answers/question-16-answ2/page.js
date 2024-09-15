@@ -19,7 +19,7 @@ export default function Question16Yes() {
       };
     
     const handleNoClick = () => {
-        setMessage("🍃 It's okay to struggle; we're here to help you get back up to practice mindful eating, one step at a time!");
+        setMessage("🌼 Your self-assurance is impressive! Great job practicing self-compassion—keep nurturing that kindness toward yourself!");
       };
 
 
@@ -73,6 +73,7 @@ export default function Question16Yes() {
                             
                             <center>
                                 <button
+                                    onClick={handleNoClick}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -85,7 +86,7 @@ export default function Question16Yes() {
                                         borderRadius:'15px',
                                         // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
-
+                                    handleNoClick
                                 >
                                     <span style={{ fontSize: '30px' }}>👎</span>
                                     <br/><br/>
@@ -93,6 +94,7 @@ export default function Question16Yes() {
                                 </button>
                               
                                 <button
+                                    onClick={handleYesClick}
                                     className="btn btn-primary btn-large"
                                     style={{ 
                                         backgroundColor: '#F0F0F0', 
@@ -105,6 +107,7 @@ export default function Question16Yes() {
                                         borderRadius:'15px',
                                         // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
                                     }}
+                                    
 
                                 >
                                     <span style={{ fontSize: '30px' }}>👍</span>
