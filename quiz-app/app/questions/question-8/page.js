@@ -11,13 +11,13 @@ export default function Question8() {
 
     const continNo = () => {
         // router.push(path);
-        router.push('/answers/question-8-answ1');
+        router.push('/questions/answers/question-8-answ1');
 
       };
 
     const continYes = () => {
     // router.push(path);
-    router.push('/answers/question-8-answ2');
+    router.push('/questions/answers/question-8-answ2');
 
     };
 

@@ -10,12 +10,12 @@ export default function Question16() {
     const router = useRouter();
 
     const continNo = () => {
-        router.push('/answers/question-16-answ1');
+        router.push('/questions/answers/question-16-answ1');
 
       };
 
     const continYes = () => {
-    router.push('/answers/question-16-answ2');
+    router.push('/questions/answers/question-16-answ2');
 
     };
 
