@@ -4,20 +4,20 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
 
 
-export default function Question8() {
+export default function Question26() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
 
     const continNo = () => {
         // router.push(path);
-        router.push('/questions/answers/question-8-answ1');
+        router.push('/answers/question-26-answ1');
 
       };
 
     const continYes = () => {
     // router.push(path);
-    router.push('/questions/answers/question-8-answ2');
+    router.push('/answers/question-26-answ2');
 
     };
 
@@ -50,7 +50,7 @@ export default function Question8() {
                     <center>
                         <h3 className='mb-4'>
                         <span style={{ color: '#4D4D4D' }}>
-                            Is it easy for you to get back on track <br/>with a diet or healthy eating regime?
+                            How often do you skip meals?
                         </span>
                         </h3>
                         

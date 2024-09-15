@@ -4,13 +4,13 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
 
 
-export default function Question19() {
+export default function Question20() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
 
     const continQuiz = () => {
-        router.push('/questions/question-20');
+        router.push('/questions/question-21');
       };
 
     return (
@@ -44,7 +44,7 @@ export default function Question19() {
                     <center>
                         <h3 className='mb-4'>
                         <span style={{ color: '#4D4D4D' }}>
-                        Do you feel very self-conscious <br/>about your weight and body size <br/>such that it stops you from <br/>socializing?
+                        Do you notice that you reach for <br/>certain types of food (e.g., sweets, <br/>comfort foods) when you're feeling<br/>emotionally upset?
                         </span>
                         </h3>
                         
