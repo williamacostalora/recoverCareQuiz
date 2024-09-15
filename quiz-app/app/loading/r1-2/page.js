@@ -3,12 +3,12 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Head from 'next/head';
 
-export default function R11() {
+export default function R12() {
     const router = useRouter();
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            router.push('/loading/r1-2');
+            router.push('/questions/question-3');
         }, 3000); // 3 seconds timer
 
         return () => clearTimeout(timer);
@@ -39,11 +39,12 @@ export default function R11() {
                         <br /><br /><br />
 
                         <center>
-                            <img src="/assets/r1-1 bean.png" alt="bean" style={{ width: '200px', height: 'auto' }} />
+                            <img src="/assets/r1-2 bean.png" alt="bean" style={{ width: '200px', height: 'auto' }} />
                             <h3 className='mb-4'>Glad you are here!</h3>
                             <br />
                             <small>
-                                If you are trying to get more insight<br /> into your binge eating behavior, <br />our quiz is a great first step.
+                                
+                            This quiz will help you understand <br /> yourself better and discover if <br /> R.care is the right fit for you.
                                 <br /><br />
                             </small>
                         </center>

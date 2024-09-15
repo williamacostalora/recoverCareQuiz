@@ -3,12 +3,12 @@
 import { useEffect } from "react";
 import { useRouter } from 'next/navigation'
 
-export default function r21() {
+export default function r32() {
     const router = useRouter();
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            router.push('/loading/r2-2');
+            router.push('/loading/r3-3');
         }, 3000); // 3 seconds timer
 
         return () => clearTimeout(timer);
@@ -36,11 +36,11 @@ export default function r21() {
 
 
                     <center>                   
-                        <img src="/assets/r2-1 bean.png" alt="bean2" style={{ width: '200px', height: 'auto' }} />
+                        <img src="/assets/r3-2 bean.png" alt="bean2" style={{ width: '200px', height: 'auto' }} />
 
                         <br/><br/>
                         <small>
-                            Binge eating symptoms can be <br/>exhausting.
+                        Exploring the deeper emotional <br/> aspects of binge eating can be <br/> challenging and personal.
                             
                             <br/> 
                             <br/>

@@ -8,7 +8,7 @@ export default function r21() {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            router.push('/loading/r2-2');
+            router.push('/loading/r2-3');
         }, 3000); // 3 seconds timer
 
         return () => clearTimeout(timer);
@@ -36,11 +36,11 @@ export default function r21() {
 
 
                     <center>                   
-                        <img src="/assets/r2-1 bean.png" alt="bean2" style={{ width: '200px', height: 'auto' }} />
+                        <img src="/assets/r2-2 bean.png" alt="bean2" style={{ width: '200px', height: 'auto' }} />
 
                         <br/><br/>
                         <small>
-                            Binge eating symptoms can be <br/>exhausting.
+                        It sounds like you’re facing a <br/> handful of these challenges, but <br/> you’re on the right path.
                             
                             <br/> 
                             <br/>

@@ -3,12 +3,12 @@
 import { useEffect } from "react";
 import { useRouter } from 'next/navigation'
 
-export default function r21() {
+export default function r23() {
     const router = useRouter();
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            router.push('/loading/r2-2');
+            router.push('/questions/question-8');
         }, 3000); // 3 seconds timer
 
         return () => clearTimeout(timer);
@@ -36,11 +36,11 @@ export default function r21() {
 
 
                     <center>                   
-                        <img src="/assets/r2-1 bean.png" alt="bean2" style={{ width: '200px', height: 'auto' }} />
+                        <img src="/assets/r2-3 bean.png" alt="bean2" style={{ width: '200px', height: 'auto' }} />
 
                         <br/><br/>
                         <small>
-                            Binge eating symptoms can be <br/>exhausting.
+                        Let’s continue to explore further - <br/> you’ve got this!
                             
                             <br/> 
                             <br/>
