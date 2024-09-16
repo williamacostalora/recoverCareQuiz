@@ -38,7 +38,7 @@ export default function c1() {
                         R.care empowers you to <br/>
                         separate emotions from food <br/>
                         and help you maintain <br/>
-                        balanced eatig patterns <br/>
+                        balanced eating patterns <br/>
                         throughout the day
                         </h3>                    
                     </center>
