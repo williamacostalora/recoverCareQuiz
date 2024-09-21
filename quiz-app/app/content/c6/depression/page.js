@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
   
 
-export default function c7() {
+export default function c6Depression() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
@@ -15,7 +15,7 @@ export default function c7() {
 
     return (
         <div style={{ 
-                    background: ' #E9D7F7 ', 
+                    background: ' #E4DFEA ', 
                     minHeight: '100vh', 
                     padding: '20px' 
                 }}>
@@ -40,40 +40,45 @@ export default function c7() {
                     <center>
                     
                         <h3 className='mb-4'>
-                        Our evidence-based program <br/>
-                        is designed by leading binge <br/>
-                        eating disorder experts.<br/>
+                        Feeling depressed can be a<br/>
+                        result of binge eating <br/>
+                        symptoms.<br/>
                         </h3>             
                     </center>
+                    
                         
                     </div>
                     <center>
                         
-                    <img
-                            src="/assets/harvard-logo.png"
-                            alt="Harvard Logo"
-                            style={{
-                            // display: 'flex',
-                            width: '200px',
-                            height: '100',
-                            marginTop: '20px',
+         
+                    <br/><br/>
 
-                            }}
-                        />
-                    <br/><br/><br/><br/><br/>
+                    
+
+                <small>
+                    Binge eating often leads to feelings <br/>
+                    of guilt, shame, and loss of control, <br/>
+                    which can trigger or worsen <br/>
+                    depressive symptoms. <br/><br/>
+
+                    Additionally, the physical <br/>
+                    discomfort and health issues <br/>
+                    related to binge eating can further <br/>
+                    contribute to a depressed mood. <br/>
+                </small>                
+                <br/>
 
 
-                    <img
-                        // src="/assets/sample-score.jpeg" 
-                        src = "/assets/c7.png"
+                <img
+                        src = "/assets/c6.png"
                         alt="progress bar" 
                         style={{ width: '300px', height: '200' }} 
                     >
                     </img>
-                    <br/>
+
                 </center>
 
-                    
+
 
                     {quizStarted ? (
                         <Quiz name={name} />

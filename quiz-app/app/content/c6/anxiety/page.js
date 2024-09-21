@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
   
 
-export default function c7() {
+export default function c6Anxiety() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
@@ -15,7 +15,7 @@ export default function c7() {
 
     return (
         <div style={{ 
-                    background: ' #E9D7F7 ', 
+                    background: ' #E4DFEA ', 
                     minHeight: '100vh', 
                     padding: '20px' 
                 }}>
@@ -40,40 +40,43 @@ export default function c7() {
                     <center>
                     
                         <h3 className='mb-4'>
-                        Our evidence-based program <br/>
-                        is designed by leading binge <br/>
-                        eating disorder experts.<br/>
+                        Feeling anxious can be a<br/>
+                        result of binge eating <br/>
+                        symptoms.<br/>
                         </h3>             
                     </center>
+                    
                         
                     </div>
                     <center>
                         
-                    <img
-                            src="/assets/harvard-logo.png"
-                            alt="Harvard Logo"
-                            style={{
-                            // display: 'flex',
-                            width: '200px',
-                            height: '100',
-                            marginTop: '20px',
+         
+                    <br/><br/>
 
-                            }}
-                        />
-                    <br/><br/><br/><br/><br/>
+                    
+
+                <small>
+                The stress of managing eating <br/>
+                behaviors, body image concerns, <br/>
+                and the fear of being judged can <br/>
+                contribute to heightened anxiety <br/>
+                levels. Often, managing your eating <br/>
+                habit effectively can significantly <br/>
+                reduce or eliminate this anxiety. <br/>
+                </small>                
+                <br/><br/>
 
 
-                    <img
-                        // src="/assets/sample-score.jpeg" 
-                        src = "/assets/c7.png"
+                <img
+                        src = "/assets/c6.png"
                         alt="progress bar" 
                         style={{ width: '300px', height: '200' }} 
                     >
                     </img>
-                    <br/>
+
                 </center>
 
-                    
+
 
                     {quizStarted ? (
                         <Quiz name={name} />

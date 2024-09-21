@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
   
 
-export default function c7() {
+export default function c10() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
@@ -38,39 +38,32 @@ export default function c7() {
 
 
                     <center>
+                    <span style={{ fontSize: '100px' }}>🚀</span><br/><br/>
+
                     
                         <h3 className='mb-4'>
-                        Our evidence-based program <br/>
-                        is designed by leading binge <br/>
-                        eating disorder experts.<br/>
+                        <strong>Your enthusiasm is a great <br/>
+                        sign! </strong> 
+                        
+                        A positive mindset is <br/>
+                        the foundation of any <br/>
+                        growth journey. <br/>
                         </h3>             
                     </center>
                         
                     </div>
                     <center>
                         
-                    <img
-                            src="/assets/harvard-logo.png"
-                            alt="Harvard Logo"
-                            style={{
-                            // display: 'flex',
-                            width: '200px',
-                            height: '100',
-                            marginTop: '20px',
-
-                            }}
-                        />
-                    <br/><br/><br/><br/><br/>
-
-
-                    <img
-                        // src="/assets/sample-score.jpeg" 
-                        src = "/assets/c7.png"
-                        alt="progress bar" 
-                        style={{ width: '300px', height: '200' }} 
-                    >
-                    </img>
+                    
                     <br/>
+
+                    <small>
+                        Based on everything you shared with <br/>
+                        us, we'll show you how your personal <br/>
+                        struggles align with binge eating. <br/>
+                    </small>
+                    
+                    <br/><br/><br/><br/><br/>
                 </center>
 
                     

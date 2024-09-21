@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
   
 
-export default function c7() {
+export default function c9() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
@@ -29,50 +29,56 @@ export default function c7() {
                         </h2>
                     </center>
 
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-
-
+                    <br/><br/><br/><br/><br/>
+   
                     <center>
                     
                         <h3 className='mb-4'>
-                        Our evidence-based program <br/>
-                        is designed by leading binge <br/>
-                        eating disorder experts.<br/>
+                        Managing your binge eating <br/>
+                        behavior is hard, but R.care <br/>
+                        makes it easy in 5 minutes a day. <br/>
                         </h3>             
                     </center>
                         
                     </div>
-                    <center>
-                        
-                    <img
-                            src="/assets/harvard-logo.png"
-                            alt="Harvard Logo"
-                            style={{
-                            // display: 'flex',
-                            width: '200px',
-                            height: '100',
-                            marginTop: '20px',
-
-                            }}
-                        />
-                    <br/><br/><br/><br/><br/>
-
-
-                    <img
-                        // src="/assets/sample-score.jpeg" 
-                        src = "/assets/c7.png"
-                        alt="progress bar" 
-                        style={{ width: '300px', height: '200' }} 
-                    >
-                    </img>
                     <br/>
+                    <center>
+
+
+                        
+                    <br/><br/>
+
+                   
+
+                    <button
+                            style={{
+                                backgroundColor: '#FFFFFF', 
+                                // marginRight: '13px', 
+                                marginBottom: '13px',  
+                                width: '300px', 
+                                height: '310px' , 
+                                border:'none', 
+                                outline:'none',
+                                borderRadius:'15px',
+                                // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
+                                alignItems: 'center',
+                                textAlign:'center'
+                            }}
+                            >
+                            
+
+                            <img
+                                // src="/assets/sample-score.jpeg" 
+                                src = "/assets/c9.jpg"
+                                alt="progress bar" 
+                                style={{ width: '290px', height: '190' }} 
+                            >
+                            </img>
+                        
+                        </button>
                 </center>
 
+                <br/>
                     
 
                     {quizStarted ? (

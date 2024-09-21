@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
   
 
-export default function c7() {
+export default function c8Free() {
     const [quizStarted, setQuizStarted] = useState(false);
     const [name, setName] = useState('');
     const router = useRouter();
@@ -29,48 +29,34 @@ export default function c7() {
                         </h2>
                     </center>
 
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
+                    <br/><br/><br/><br/><br/><br/>
 
 
                     <center>
+                    <span style={{ fontSize: '100px' }}>👍</span><br/><br/>
+
                     
                         <h3 className='mb-4'>
-                        Our evidence-based program <br/>
-                        is designed by leading binge <br/>
-                        eating disorder experts.<br/>
+                        Sounds like you have the time <br/>
+                        to prioritise managing <br/>
+                        your symptoms.<br/>
                         </h3>             
                     </center>
                         
                     </div>
                     <center>
-                        
-                    <img
-                            src="/assets/harvard-logo.png"
-                            alt="Harvard Logo"
-                            style={{
-                            // display: 'flex',
-                            width: '200px',
-                            height: '100',
-                            marginTop: '20px',
+                    <br/>
 
-                            }}
-                        />
+                        
+                    <small>
+                    That's great! While it can be tempting to <br/>
+                    go all in at once, we encourage you to <br/>
+                    slow down and take it one day at a time, <br/>
+                    which will help building a lasting habit.<br/>
+                    </small>
+
                     <br/><br/><br/><br/><br/>
 
-
-                    <img
-                        // src="/assets/sample-score.jpeg" 
-                        src = "/assets/c7.png"
-                        alt="progress bar" 
-                        style={{ width: '300px', height: '200' }} 
-                    >
-                    </img>
-                    <br/>
                 </center>
 
                     
