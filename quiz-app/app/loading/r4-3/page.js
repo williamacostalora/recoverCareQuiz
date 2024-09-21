@@ -3,12 +3,12 @@
 import { useEffect } from "react";
 import { useRouter } from 'next/navigation'
 
-export default function r33() {
+export default function r43() {
     const router = useRouter();
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            router.push('/questions/question-15');
+            router.push('/questions/question-21');
         }, 3000); // 3 seconds timer
 
         return () => clearTimeout(timer);
@@ -36,11 +36,11 @@ export default function r33() {
 
 
                     <center>                   
-                        <img src="/assets/r3-3 bean.png" alt="bean2" style={{ width: '200px', height: 'auto' }} />
+                        <img src="/assets/r4-3 bean.png" alt="bean2" style={{ width: '200px', height: 'auto' }} />
 
                         <br/><br/>
                         <small>
-                        It’s important to remember that <br/> <strong>you’re not alone</strong> and that you’re <br/> taking a step towards emotional <br/> healing. 
+                        This disconnect can be frustrating, but <br/> we're here to help. We'll now take a <br/> look at your ability to tune into your <br/> body's needs and maintain balanced <br/> eating habits.
                             
                             <br/> 
                             <br/>

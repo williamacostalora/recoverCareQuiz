@@ -3,12 +3,12 @@
 import { useEffect } from "react";
 import { useRouter } from 'next/navigation'
 
-export default function r33() {
+export default function r42() {
     const router = useRouter();
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            router.push('/questions/question-15');
+            router.push('/loading/r4-3');
         }, 3000); // 3 seconds timer
 
         return () => clearTimeout(timer);
@@ -36,11 +36,11 @@ export default function r33() {
 
 
                     <center>                   
-                        <img src="/assets/r3-3 bean.png" alt="bean2" style={{ width: '200px', height: 'auto' }} />
+                        <img src="/assets/r4-2 bean.png" alt="bean2" style={{ width: '200px', height: 'auto' }} />
 
                         <br/><br/>
                         <small>
-                        It’s important to remember that <br/> <strong>you’re not alone</strong> and that you’re <br/> taking a step towards emotional <br/> healing. 
+                        Where many people struggling with <br/> binge eating fall short is in recognizing <br/> and responding to their body's true <br/>hunger and fullness signals. 
                             
                             <br/> 
                             <br/>
