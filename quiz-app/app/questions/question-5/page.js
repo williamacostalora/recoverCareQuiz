@@ -72,7 +72,7 @@ export default function Question5() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
                                         color: 'black'
 
                                     }}
@@ -93,7 +93,7 @@ export default function Question5() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
                                         color: 'black'
 
                                     }}
@@ -114,7 +114,7 @@ export default function Question5() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
                                         color: 'black'
 
                                     }}
@@ -135,7 +135,7 @@ export default function Question5() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
                                         color: 'black'
 
                                     }}
@@ -155,7 +155,7 @@ export default function Question5() {
                                         border:'none', 
                                         outline:'none',
                                         borderRadius:'15px',
-                                        boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
+                                        // boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)',
                                         color: 'black'
 
                                     }}

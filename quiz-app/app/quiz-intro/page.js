@@ -23,22 +23,20 @@ export default function QuizIntro() {
             <div className="container mt-5 ml-5">
                 <div className="text-center">
                     <center>
-                        <h2 className='mtb-1'>
+                        <h4 className='mtb-1'>
                             <span style={{ color: 'black' }}>r</span>
                             <span style={{ color: '#945DD9' }}>.</span>
                             <span style={{ color: 'black' }}>care</span>
-                        </h2>
+                        </h4>
                     </center>
 
-                    <br/>
                     <br/>
                     <br/>
                     <center>
                         <h3 className='mb-4'>
                             Built by psychologists &  <br/>
                             binge eating experts <br />
-                        </h3>
-                        <br/>
+                        </h3><br/>
                         <small>
                             
                             <span style={{ color: '#4D4D4D' }}>Our quiz will help you learn more <br/>
@@ -53,7 +51,7 @@ export default function QuizIntro() {
                     </center>
                         
                     </div>
-                    <br/><br/>
+                    <br/>
                     <center>
 
                         <button
@@ -82,6 +80,12 @@ export default function QuizIntro() {
                           
 
                         </button>
+                        <br/>
+                        <br/>
+
+                        <small>
+                        <span style={{ color: '#4D4D4D' }}>Created with experts from </span>
+                        </small>
 
                         <br/>
                         <img
@@ -96,6 +100,7 @@ export default function QuizIntro() {
                             }}
                         />
                     </center>
+                    {/* <br/> */}
 
                     
 
